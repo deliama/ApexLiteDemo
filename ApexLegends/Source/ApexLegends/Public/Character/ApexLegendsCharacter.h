@@ -48,9 +48,16 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
 	class UInputAction* MouseLookAction;
+
+	/** 下蹲操作 */
+	UPROPERTY(EditAnywhere, Category ="Input")
+	UInputAction* CrouchAction;	//绑定Left Ctrl
 	
 public:
 	AApexLegendsCharacter();
+
+	AApexLegendsCharacter(const FObjectInitializer& ObjectInitializer);
+	
 
 protected:
 
@@ -76,6 +83,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoJumpEnd();
 
+	UFUNCTION(BlueprintCallable, Category="Input")
+	void OnCrouch(const FInputActionValue& Value);
+
 protected:
 
 	/** Set up input action bindings */
@@ -90,5 +100,9 @@ public:
 	/** Returns first person camera component **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	/** Returns ApexMovementComponent subobject **/
+	UFUNCTION(BlueprintCallable)
+	class UApexMovementComponent*  GetApexMovementComponent() const;
+	
 };
 

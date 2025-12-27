@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "ApexLegendsGameMode.h"
+#include "Core/ApexLegendsGameMode.h"
 
 AApexLegendsGameMode::AApexLegendsGameMode()
 {

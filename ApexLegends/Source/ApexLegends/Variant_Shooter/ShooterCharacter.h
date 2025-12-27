@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ApexLegendsCharacter.h"
+#include "Character/ApexLegendsCharacter.h"
 #include "ShooterWeaponHolder.h"
 #include "ShooterCharacter.generated.h"
 
@@ -85,6 +85,7 @@ public:
 
 	/** Constructor */
 	AShooterCharacter();
+	AShooterCharacter(const FObjectInitializer& ObjectInitializer);
 
 protected:
 

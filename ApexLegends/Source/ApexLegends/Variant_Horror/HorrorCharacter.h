@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ApexLegendsCharacter.h"
+#include "Character/ApexLegendsCharacter.h"
 #include "HorrorCharacter.generated.h"
 
 class USpotLightComponent;
@@ -79,6 +79,7 @@ protected:
 
 	/** Constructor */
 	AHorrorCharacter();
+	AHorrorCharacter(const FObjectInitializer& ObjectInitializer);
 
 	/** Gameplay initialization */
 	virtual void BeginPlay() override;

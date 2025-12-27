@@ -10,7 +10,8 @@
 #include "EnhancedInputComponent.h"
 #include "InputAction.h"
 
-AHorrorCharacter::AHorrorCharacter()
+AHorrorCharacter::AHorrorCharacter(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
 {
 	// create the spotlight
 	SpotLight = CreateDefaultSubobject<USpotLightComponent>(TEXT("SpotLight"));

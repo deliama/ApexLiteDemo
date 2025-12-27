@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ApexLegendsCharacter.h"
+#include "Character/ApexLegendsCharacter.h"
 #include "ShooterWeaponHolder.h"
 #include "ShooterNPC.generated.h"
 
